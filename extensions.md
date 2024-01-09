@@ -1,3 +1,6 @@
+## Extensions
+[back](README.md)
+
 |name|description|link|
 |---|---|---|
 |tactile|Tile windows on a custom grid using your keyboard|https://extensions.gnome.org/extension/4548/tactile/|
