@@ -47,4 +47,5 @@ echo
 
 message | node $cwd/.box.js > /tmp/message.tmp
 control in-work -e | node $cwd/.box.js > /tmp/control.tmp
-node $cwd/.columns.js "$(cat /tmp/control.tmp)" "$(cat /tmp/message.tmp)"
+calendar | node $cwd/.box.js > /tmp/calendar.tmp
+node $cwd/.columns.js "$(cat /tmp/control.tmp)" "$(cat /tmp/message.tmp)" "$(cat /tmp/calendar.tmp)"
