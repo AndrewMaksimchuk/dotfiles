@@ -22,3 +22,20 @@ function dataurl() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Open tmux with 2 window: 1 | 1
+function t2
+{
+	tmux new-session -s "mySession" -d
+	tmux split-window -h
+	tmux -2 attach-session -d 
+}
+
+# Open tmux with 3 window: 1 | 2
+function t3
+{
+	tmux new-session -s "mySession" -d
+	tmux split-window -h
+	tmux split-window -v
+	tmux -2 attach-session -d 
+}
