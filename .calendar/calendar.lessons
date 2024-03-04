@@ -1,0 +1,54 @@
+/* The Elements of Programming Style */
+
+*/1	Write clearly – don't be too clever
+*/2	Say what you mean, simply and directly
+*/3	Use library functions whenever feasible
+*/4	Avoid too many temporary variables
+*/5	Write clearly – don't sacrifice clarity for efficiency
+*/6	Let the machine do the dirty work
+*/7	Replace repetitive expressions by calls to common functions
+*/8	Parenthesize to avoid ambiguity
+*/9	Choose variable names that won't be confused
+*/10	Avoid unnecessary branches
+*/11	If a logical expression is hard to understand, try transforming it
+*/12	Choose a data representation that makes the program simple
+*/13	Write first in easy-to-understand pseudo language; then translate into whatever language you have to use
+*/14	Modularize
+*/15	Don't patch bad code – rewrite it
+*/16	Write and test a big program in small pieces
+*/17	Use recursive procedures for recursively-defined data structures
+*/18	Test input for plausibility and validity
+*/19	Make sure input doesn't violate the limits of the program
+*/20	Terminate input by end-of-file marker, not by count
+*/21	Identify bad input; recover if possible
+*/22	Make input easy to prepare and output self-explanatory
+*/23	Use uniform input formats
+*/24	Make input easy to proofread
+*/25	Use self-identifying input
+*/26	Make sure all variables are initialized before use
+*/27	Don't stop at one bug
+*/28	Use debugging compilers
+*/29	Watch out for off-by-one errors
+*/30	Take care to branch the right way on equality
+*/1	Be careful if a loop exits to the same place from the middle and the bottom
+*/2	Make sure your code does "nothing" gracefully
+*/3	Test programs at their boundary values
+*/4	Check some answers by hand
+*/5	Make it right before you make it faster
+*/6	Make it fail-safe before you make it faster
+*/7	Make it clear before you make it faster
+*/8	Don't sacrifice clarity for small gains in efficiency
+*/9	Let your compiler do the simple optimizations
+*/10	Don't strain to re-use code; reorganize instead
+*/11	Make sure special cases are truly special
+*/12	Keep it simple to make it faster
+*/13	Don't diddle code to make it faster – find a better algorithm
+*/14	Instrument your programs
+*/15	Make sure comments and code agree
+*/16	Don't just echo the code with comments – make every comment count
+*/17	Don't comment bad code – rewrite it
+*/18	Use variable names that mean something
+*/19	Use statement labels that mean something
+*/20	Format a program to help the reader understand it
+*/21	Document your data layouts
+*/22	Don't over-comment
