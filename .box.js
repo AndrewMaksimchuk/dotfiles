@@ -5,7 +5,7 @@ const rl = readline.createInterface({ input });
 const inputLines = [];
 
 rl.on('line', (line) => {
-    inputLines.push(line);
+    inputLines.push(line.trim());
 });
 
 rl.once('close', () => {

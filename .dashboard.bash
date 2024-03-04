@@ -23,11 +23,11 @@ function tools(){
 }
 
 function message(){
-	echo "For note use command 'note'"
-	echo "For read book use command 'readook rn'"	
-	echo "For track money spend use command 'spending'"
-	echo "For get info about github projects, use command 'control'"
-	echo "For see notification with english words translation use command 'learnwords'"
+	echo "note       - view/create notes"
+	echo "readook rn - read book"	
+	echo "spending   - track money spend"
+	echo "control    - get info about github projects"
+	echo "learnwords - notification with english words translation"
 }
 
 function memory_usage(){
@@ -48,5 +48,5 @@ echo
 message | node $cwd/.box.js > /tmp/message.tmp
 control in-work -e | node $cwd/.box.js > /tmp/control.tmp
 ncal -C | node $cwd/.box.js > /tmp/cal.tmp
-calendar | node $cwd/.box.js > /tmp/calendar.tmp
+calendar | cut -d' ' -f 3- | tr '\n' '=' | tr \[:space:\] ' ' | tr '=' '\n' | cut -d' ' -f2- | fold -w 60 | node $cwd/.box.js > /tmp/calendar.tmp
 node $cwd/.columns.js "$(cat /tmp/control.tmp)" "$(cat /tmp/message.tmp)" "$(cat /tmp/cal.tmp)" "$(cat /tmp/calendar.tmp)"
