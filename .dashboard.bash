@@ -48,5 +48,5 @@ echo
 message | node $cwd/.box.js > /tmp/message.tmp
 control in-work -e | node $cwd/.box.js > /tmp/control.tmp
 ncal -C | node $cwd/.box.js > /tmp/cal.tmp
-calendar | cut -d' ' -f 3- | tr '\n' '=' | tr \[:space:\] ' ' | tr '=' '\n' | cut -d' ' -f2- | fold -w 60 | node $cwd/.box.js > /tmp/calendar.tmp
+calendar | fold -w 60 | node $cwd/.box.js > /tmp/calendar.tmp
 node $cwd/.columns.js "$(cat /tmp/control.tmp)" "$(cat /tmp/message.tmp)" "$(cat /tmp/cal.tmp)" "$(cat /tmp/calendar.tmp)"
