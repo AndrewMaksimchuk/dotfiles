@@ -7,6 +7,8 @@ function tools(){
 		python3 --version;
 		cargo --version | cut -d ' ' -f 1,2;
 		lua -v | cut -d ' ' -f 1,2;
+		php -v | head -1 | cut -d- -f1;
+		echo "composer `composer -V | cut -d' ' -f3`";
 		gjs --version;
 		gnome-shell --version;
 	)
