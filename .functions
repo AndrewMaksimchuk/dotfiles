@@ -39,3 +39,19 @@ function t3
 	tmux split-window -v
 	tmux -2 attach-session -d 
 }
+
+# Open default reader with current readed book or open directory with books for choosen
+function readbooks
+{
+	local dir_books=~/Books
+	local dir_reading_now=$dir_books/reading-now/
+	local dir_to_read=$dir_books/to-read/
+	local current_book=$(ls -1 $dir_reading_now)
+
+	if [[ -z $current_book ]];then
+		xdg-open $dir_to_read
+		return
+	fi
+
+	xdg-open "$dir_reading_now/$current_book"
+}
