@@ -1,0 +1,11 @@
+[font]
+normal.family = "JetBrains Mono"
+size = 10
+
+[window]
+decorations = "None"
+startup_mode = "Maximized"
+
+[window.padding]
+x = 15
+y = 15
